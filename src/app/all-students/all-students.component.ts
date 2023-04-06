@@ -35,6 +35,7 @@ export class AllStudentsComponent implements OnInit {
     });
   }
 
+  /** ashT
   openDeleteModal(id: number) {
     const dialogRef = this.dialog.open(DeleteDialogStudentComponent, {
       width: '250px',
@@ -48,5 +49,5 @@ export class AllStudentsComponent implements OnInit {
         );
       }
     });
-  }
+  }  ashT **/
 }

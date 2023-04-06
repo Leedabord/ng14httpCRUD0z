@@ -11,7 +11,13 @@ export class StudentsService {
 
   get(): Observable<Student[]> {
     return this.httpClient.get<Student[]>(
-      'https://api.airtable.com/v0/app0hohtq4b1nM0Kb/Transactions?api_key=key66fQg5IghIIQmb');
+      'https://api.airtable.com/v0/app0hohtq4b1nM0Kb/Students?api_key=key66fQg5IghIIQmb');
+  }
+
+  create(payload: Student) {
+    return this.httpClient.get<Student[]>(
+      'https://api.airtable.com/v0/app0hohtq4b1nM0Kb/Students?api_key=key66fQg5IghIIQmb'),
+      payload
   }
 
 /**  
@@ -20,7 +26,8 @@ export class StudentsService {
   }
 
   create(payload: Student) {
-    return this.httpClient.get<Student[]>('http://localhost:3000/students'),
+    return this.httpClient.get<Student[]>(
+      'https://api.airtable.com/v0/app0hohtq4b1nM0Kb/Students?api_key=key66fQg5IghIIQmb'),
       payload
     );
   }

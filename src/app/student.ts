@@ -1,4 +1,4 @@
-export interface Student2 {
+export interface Student {
   id: number;
   firstName: string;
   lastName: string;
@@ -6,6 +6,6 @@ export interface Student2 {
   age: number;
 }
 
-export interface Student {
+export interface Student2 {
   Payee: string; TransDate: string; Amount: number; Category: string; subCat: string; Notes: string;
 }
