@@ -9,7 +9,9 @@ import { HttpClient } from '@angular/common/http';
 
 export class HttpService {
   
-  private url = 'https://my-json-server.typicode.com/JSGund/XHR-Fetch-Request-JavaScript/posts';
+  private url =
+  'https://api.airtable.com/v0/app0hohtq4b1nM0Kb/Students?api_key=key66fQg5IghIIQmb';
+//  'https://my-json-server.typicode.com/JSGund/XHR-Fetch-Request-JavaScript/posts';
   
   constructor(private http: HttpClient) { }
   

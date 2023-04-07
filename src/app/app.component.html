@@ -3,12 +3,14 @@
 </mat-toolbar>
 
 <div>
-  <li *ngFor="let post of posts">
-       <a  href="{{post.path}}">  
-           <span  style="font-size: 20px;text-align: center;">{{post.title}}                 
+  <li *ngFor="let post of posts.records">
+       "{{post.fields.lastName}}"   
+           <span  style="font-size: 20px;text-align: center;">{{post.fields.gender}}                 
             </span>
-      </a>
   </li>
   </div>
+
+  <hr>
+<pre> {{ posts | json }} </pre>
 
 <!-- router-outlet></router-outlet -->
