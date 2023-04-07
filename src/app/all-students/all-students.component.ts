@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Student } from '../student';
 import { StudentsService } from '../students.service';
 import { MatDialog } from '@angular/material/dialog';
-import { DeleteDialogStudentComponent } from '../delete-dialog-student/delete-dialog-student.component';
+// import { DeleteDialogStudentComponent } from '../delete-dialog-student/delete-dialog-student.component';
 
 @Component({
   selector: 'app-all-students',

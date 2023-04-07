@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AddStudentComponent } from './add-student/add-student.component';
+//import { AddStudentComponent } from './add-student/add-student.component';
 import { AllStudentsComponent } from './all-students/all-students.component';
-import { EditStudentComponent } from './edit-student/edit-student.component';
+//import { EditStudentComponent } from './edit-student/edit-student.component';
 
 const routes: Routes = [
   {
@@ -11,11 +11,13 @@ const routes: Routes = [
   },
   {
     path: 'add-student',
-    component: AddStudentComponent,
+    component: AllStudentsComponent,
+//    component: AddStudentComponent,
   },
   {
     path: 'edit-student/:id',
-    component: EditStudentComponent,
+    component: AllStudentsComponent,
+//    component: EditStudentComponent,
   },
 ];
 
