@@ -31,7 +31,6 @@ import { AllStudentsComponent } from './all-students/all-students.component';
 // import 'rxjs/add/observable/of';
 // import {AuthInterceptor} from "./auth-interceptor";
 
-
 @NgModule({
   declarations: [AppComponent, AllStudentsComponent, 
     // AddStudentComponent, EditStudentComponent, DeleteDialogStudentComponent
