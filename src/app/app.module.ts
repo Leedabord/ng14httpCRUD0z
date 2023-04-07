@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
+//import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -14,9 +14,9 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
-import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
 
-import { AllStudentsComponent } from './all-students/all-students.component';
+// import { AllStudentsComponent } from './all-students/all-students.component';
 // import { AddStudentComponent } from './add-student/add-student.component';
 // import { EditStudentComponent } from './edit-student/edit-student.component';
 // import { DeleteDialogStudentComponent } from './delete-dialog-student/delete-dialog-student.component';
@@ -32,12 +32,13 @@ import { AllStudentsComponent } from './all-students/all-students.component';
 // import {AuthInterceptor} from "./auth-interceptor";
 
 @NgModule({
-  declarations: [AppComponent, AllStudentsComponent, 
+  declarations: [AppComponent, 
+    // AllStudentsComponent, 
     // AddStudentComponent, EditStudentComponent, DeleteDialogStudentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+//    AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     HttpClientModule,
@@ -51,11 +52,7 @@ import { AllStudentsComponent } from './all-students/all-students.component';
     MatIconModule,
     MatDialogModule
   ],
-  providers: [
-    [ { provide: HTTP_INTERCEPTORS, 
-      // useClass: AuthInterceptor, multi: true 
-    } ]
-  ],
-bootstrap: [AppComponent],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
