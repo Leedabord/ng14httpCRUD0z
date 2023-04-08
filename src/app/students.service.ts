@@ -22,8 +22,8 @@ export class HttpService {
     h: { w$:0, sk:0, b1:0, b2:0, sc:8, p:4, hc:1 } }
   ] }; 
   console.log(getRecs);
-  getRecs += mm;
-    return getRecs;
+
+  return getRecs;
   // return this.http.get(this.url);
 
   }
@@ -31,6 +31,15 @@ export class HttpService {
 }
 
 /**  'https://api.airtable.com/v0/app0hohtq4b1nM0Kb/Students?api_key=key66fQg5IghIIQmb');
+
+  (async () => {
+    // GET request using fetch with async/await
+    const response = await fetch(
+        'https://api.airtable.com/v0/app0hohtq4b1nM0Kb/Scores?api_key=key66fQg5IghIIQmb'
+//        'https://reqres.in/api/users'
+  );
+  const data = await response.json();
+  })();
 
   get(): Observable<Student[]> {
     return this.httpClient.get<Student[]>('http://localhost:3000/students');
