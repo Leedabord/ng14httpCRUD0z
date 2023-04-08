@@ -1,16 +1,91 @@
+<nav>
+  <img mat-card-avatar 
+  src="https://media.istockphoto.com/vectors/vector-cartoon-of-happy-golf-ball-with-clubs-and-cart-vector-id486710150"  alt="Golf">    
+  Social Golf Tribe - Skins Match 
+  <hr>
+  <p> </p>
+</nav>
+
+
+
+<p> </p>
+
+<mat-card>
+  <mat-card-content>
+  
+
+        <!-- span>  
+
+          <div   *ngFor="let tt of posts.records; let ii = index" > 
+<mat-card>
+<mat-card-content>
+  <button  mat-raised-button  color="warn"  > {{ tt.fields.Team }} </button>
+
+  <span  style="font-size: 20px;text-align: center;">{{tt.fields.RecType}}                 
+   </span>
+
+          <mat-chip-list>
+        <mat-chip color="accent" selected>  {{ tt.wins }}   </mat-chip>
+        <mat-chip>  {{ tt.skins }}   </mat-chip>
+        <mat-chip>  {{ tt.bonus }}   </mat-chip>
+        </mat-chip-list>
+      <mat-grid-list cols="12" rowHeight="40px">
+      <mat-grid-tile  [colspan]="4"  [rowspan]="1">
+        <span>   </span>
+      </mat-grid-tile>
+      <mat-grid-tile  [colspan]="4"  [rowspan]="1">
+        <span>   </span>
+      </mat-grid-tile>
+      <mat-grid-tile  [colspan]="4"  [rowspan]="1">
+        <button mat-raised-button  color="primary"  (click)="tempfn()">Post Score</button> 
+      </mat-grid-tile>
+      </mat-grid-list>
+
+      <hr> 
+
+      <mat-grid-list cols="12" rowHeight="80px">
+      <span  *ngFor="let xss of tt.sf9; let jj = index" >  
+      <mat-grid-tile  [colspan]="4"  [rowspan]="1">
+      <mat-form-field  class="in30px">
+      <input  type="number"   [(ngModel)]="tt.sf9[jj]"  matInput placeholder="h# {{jj+1}}" />
+      </mat-form-field>   
+      </mat-grid-tile>
+      </span> 
+      </mat-grid-list>
+      <hr> 
+
+      <mat-grid-list cols="12" rowHeight="80px">
+      <span  *ngFor="let xss of tt.sb9; let jj = index" >  
+      <mat-grid-tile  [colspan]="4"  [rowspan]="1">
+      <mat-form-field  class="in30px">
+      <input  type="number"   [(ngModel)]="tt.sb9[jj]"  matInput placeholder="h# {{jj+10}}" />
+      </mat-form-field>   
+      </mat-grid-tile>
+      </span> 
+      </mat-grid-list>
+        </span -->
+
+        <hr> 
+  
+</mat-card-content>
+</mat-card>
+
 <mat-toolbar color="primary">
   <span>Students</span>
 </mat-toolbar>
 
 <div>
   <li *ngFor="let post of posts.records">
-       "{{post.fields.Team}}"   
+       << {{post.fields.Team}}  >>
            <span  style="font-size: 20px;text-align: center;">{{post.fields.RecType}}                 
             </span>
   </li>
   </div>
 
   <hr>
-<pre> {{ posts | json }} </pre>
 
-<!-- router-outlet></router-outlet -->
+<!--
+  
+  <pre> {{ posts | json }} </pre>
+
+  router-outlet></router-outlet -->
