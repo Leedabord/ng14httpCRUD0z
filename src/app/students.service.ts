@@ -16,12 +16,13 @@ export class HttpService {
   constructor(private http: HttpClient) { }
   
   getPosts() {
-    const getRecs = this.http.get(this.url);
+    let getRecs = this.http.get(this.url);
     const mm = { ev:" ", w$:0, sk:0, b1:0, b2:0, 
     tm: [ { nm:"", w$:0, sk:0, b1:0, b2:0, f9:0, b9:0, r18:0, 
     h: { w$:0, sk:0, b1:0, b2:0, sc:8, p:4, hc:1 } }
   ] }; 
   console.log(getRecs);
+  getRecs += mm;
     return getRecs;
   // return this.http.get(this.url);
 
