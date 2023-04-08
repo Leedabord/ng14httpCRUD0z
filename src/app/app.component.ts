@@ -14,8 +14,12 @@ constructor(private httpService: HttpService) { }
 
 ngOnInit() {
 	this.httpService.getPosts().subscribe(
-	(response) => { this.posts = response; },
+	(response) => { this.posts = response; this.tempfn(); },
 	(error) => { console.log(error); });
+}
+
+tempfn() {
+  console.log("tempfn");
 }
 
 }
