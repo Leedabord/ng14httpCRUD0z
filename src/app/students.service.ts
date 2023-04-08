@@ -16,7 +16,9 @@ export class HttpService {
   constructor(private http: HttpClient) { }
   
   getPosts() {
-    return this.http.get(this.url);
+    const getRecs = this.http.get(this.url);
+    return getRecs;
+    // return this.http.get(this.url);
   }
 
 }
