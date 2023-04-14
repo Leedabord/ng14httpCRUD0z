@@ -17,16 +17,16 @@ ngOnInit() {
 	this.httpService.getPosts().subscribe(
 	(response) => { this.posts = response; 
     console.log("tempfn 1", this.posts);
-   this.tempfn(); },
+//   this.tempfn(); 
+},
 	(error) => { console.log(error); });
 }  // ** end_ ngOnInit
 
 tempfn() {
   console.log("tempfn", this.posts);
 
-  for (let ii = 0; ii < this.posts.records.length; ii++) {
-
-  }
+//  for (let ii = 0; ii < this.posts.records.length; ii++) {
+//  }
 
 }  // ** end_ tempfn
 

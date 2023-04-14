@@ -6,8 +6,6 @@
   <p> </p>
 </nav>
 
-
-
 <p> </p>
 
 <mat-card   *ngFor="let tt of posts.records; let ii = index" >
@@ -17,6 +15,10 @@
 
     <span  style="font-size: 20px;text-align: center;">RecType:: {{tt.fields.RecType}}                 
      </span>
+
+     << {{tt.fields.Team}}  >>
+    <span  style="font-size: 20px;text-align: center;">{{tt.fields.RecType}}                 
+    </span>
 
         <!-- span>  
 
@@ -72,14 +74,6 @@
 <mat-toolbar color="primary">
   <span>Students</span>
 </mat-toolbar>
-
-<div>
-  <li *ngFor="let post of posts.records">
-       << {{post.fields.Team}}  >>
-           <span  style="font-size: 20px;text-align: center;">{{post.fields.RecType}}                 
-            </span>
-  </li>
-  </div>
 
   <hr>
 
