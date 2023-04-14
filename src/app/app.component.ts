@@ -14,12 +14,11 @@ posts : any;
 constructor(private httpService: HttpService) { }
 
 ngOnInit() {
-	this.httpService.getPosts().subscribe(
-	(response) => { this.posts = response; 
-    console.log("tempfn 1", this.posts);
-//   this.tempfn(); 
-},
-	(error) => { console.log(error); });
+
+  this.posts = this.httpService.getAllRecs();  
+  console.log("tempfn 1", this.posts);
+  this.tempfn();
+
 }  // ** end_ ngOnInit
 
 tempfn() {
