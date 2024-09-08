@@ -11,11 +11,11 @@ export class AppComponent {
 
 posts : any;  
 
-constructor(private httpService: HttpService) { }
+constructor(private httpSvc: HttpService) { }
 
 ngOnInit() {
 
-  this.posts = this.httpService.getAllRecs();  
+  this.posts = this.httpSvc.getAllRecs();  
   console.log("tempfn 1", this.posts);
   this.tempfn();
 
