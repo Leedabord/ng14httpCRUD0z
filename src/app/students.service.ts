@@ -35,7 +35,7 @@ httpOptions = {
 }  */
 
 public rdbGet(): Observable<any> {
- return this.http.get<any>(this.rdbURL, this.httpOptions);
+ return this.http.get(this.rdbURL, this.httpOptions);
 }
 
   private url = 
@@ -46,7 +46,8 @@ public rdbGet(): Observable<any> {
   
   public getAllRecs(): Observable<any> {
 
-    let getRecs = this.http.get<any>(this.rdbURL, this.httpOptions);
+    let getRecs = this.http.get(this.rdbURL, this.httpOptions);
+
     const mm = { ev:" ", w$:0, sk:0, b1:0, b2:0, 
       tm: [ { nm:"", w$:0, sk:0, b1:0, b2:0, f9:0, b9:0, r18:0, 
       h: { w$:0, sk:0, b1:0, b2:0, sc:8, p:4, hc:1 } }
