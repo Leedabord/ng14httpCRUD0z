@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-//import { Student } from './student';
+import { Student } from './student';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,21 +9,16 @@ import { Observable } from 'rxjs';
 
 export class HttpService {  
 
-//  public aaposts: [];
+public aaposts = [];
 public status = "null";
 
 readonly rdbURL = 
 'https://api.airtable.com/v0/app0hohtq4b1nM0Kb/Issues';
 
-// 'https://gwfl-256d.restdb.io/rest/utility';
-// 'https://api.airtable.com/v0/app0hohtq4b1nM0Kb/Scores?api_key=key66fQg5IghIIQmb';
-
 httpOptions = {
  headers: new HttpHeaders({
    'Content-Type': 'application/json',
    'Authorization': 'Bearer patgbCJgQnURgkXpI.f72c7c10a614e68e2ba92c6e7a437e64312719fe9ad7f7c38b05164dfe445a32'
-  // 'x-apikey': '5821f61550e9b39131fe1b6f'  
-   // 569a2b87566759cf4b984a50'  // 5821f61550e9b39131fe1b6f
  })
 }
 
@@ -39,8 +34,7 @@ public rdbGet(): Observable<any> {
 }
 
   private url = 
-  'https://api.airtable.com/v0/app0hohtq4b1nM0Kb/Issues?api_key=key66fQg5IghIIQmb';
-//  'https://my-json-server.typicode.com/JSGund/XHR-Fetch-Request-JavaScript/posts';
+  'https://api.airtable.com/v0/app0hohtq4b1nM0Kb/Issues/';
   
   constructor(private http: HttpClient) {}
   
