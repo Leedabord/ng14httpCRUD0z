@@ -4,6 +4,9 @@ import { AllStudentsComponent } from './all-students/all-students.component';
 // import { AddStudentComponent } from './add-student/add-student.component';
 // import { EditStudentComponent } from './edit-student/edit-student.component';
 
+// const resultsModule = () => import('./results/results.module').then(x => x.ResultsModule);
+//    { path: 'results', loadChildren: resultsModule },
+
 const routes: Routes = [
   {
     path: '',
@@ -19,6 +22,9 @@ const routes: Routes = [
     component: AllStudentsComponent,
 //    component: EditStudentComponent,
   },
+
+// otherwise redirect to home
+    { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
