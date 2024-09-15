@@ -3,10 +3,7 @@
   src="https://media.istockphoto.com/vectors/vector-cartoon-of-happy-golf-ball-with-clubs-and-cart-vector-id486710150"  alt="httpC">
   >. getRecs 
   <hr>
-  <p> </p>
 </nav>
-
-<p> </p>
 
 <mat-card   *ngFor="let tt of posts.records; let ii = index" >
   <mat-card-content>
@@ -16,6 +13,24 @@
      << {{tt.fields.Team}}  >>
     <span  style="font-size: 20px;text-align: center;">{{tt.fields.RecType}}                 
     </span>
+
+        <hr> 
+  
+</mat-card-content>
+</mat-card>
+
+<mat-toolbar color="primary">
+  <span>SCTASK</span>
+</mat-toolbar>
+
+  <hr>
+  <pre> {{ posts | json }} </pre>
+
+
+
+<!--
+  router-outlet></router-outlet
+-->
 
         <!-- span>  
 
@@ -63,18 +78,9 @@
       </mat-grid-list>
         </span -->
 
-        <hr> 
-  
-</mat-card-content>
-</mat-card>
+<!-- 
+  <app-post></app-post>
 
-<mat-toolbar color="primary">
-  <span>SCTASK</span>
-</mat-toolbar>
-
-  <hr>
-  <pre> {{ posts | json }} </pre>
-
-<!--
-  router-outlet></router-outlet
--->
+  <pre> {{ Teams | json }} </pre>
+  <pre> {{ dbRecs | json }} </pre>
+ -->
